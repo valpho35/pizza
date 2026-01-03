@@ -1,0 +1,21 @@
+<ng-template #popup let-modal>
+<!-- <div class="" id="myModal" tabindex="-1" aria-labelledby="modalLabel"> -->
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">Заголовок окна</h5>
+        <button type="button" class="btn-close" 
+        (click)="modal.dismiss('Крестик')"
+        aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <p>{{ data }}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="modal.dismiss('Кнопка Закрыть')">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить</button>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+</ng-template>
